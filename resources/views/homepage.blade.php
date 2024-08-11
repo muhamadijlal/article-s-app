@@ -1,8 +1,9 @@
 @extends('index')
 
 @section('content')
+<div class="container m-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
   @for ($i=1; $i<=5; $i++)
-    <article class="rounded-lg border border-gray-100 bg-white p-4 shadow-sm transition hover:shadow-lg sm:p-6">
+    <article class="rounded-lg border border-gray-100 bg-white p-4 shadow-sm transition hover:shadow-lg sm:p-6 h-[265px]">
       <span class="inline-block rounded bg-blue-600 p-2 text-white">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -24,20 +25,20 @@
         </svg>
       </span>
 
-      <a href="#">
-        <h3 class="mt-0.5 text-3xl font-bold text-gray-900">
+      <a href="{{ route("article") }}">
+        <h3 class="mt-0.5 text-3xl line-clamp-2 font-bold text-gray-900">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.
         </h3>
       </a>
 
-      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-400">
+      <p class="mt-2 line-clamp-2 text-sm/relaxed text-gray-400">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur
         animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia
         itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
         Molestias explicabo corporis voluptatem?
       </p>
 
-      <div class="flex items-center mt-10 text-xs gap-5">
+      <div class="flex items-center mt-8 text-xs gap-5">
         <p class="font-bold text-gray-500">July 2024</p>
         <span class="font-bold text-gray-500">🙌 204</span>
         <span class="font-bold text-gray-500">💬 5</span>

@@ -11,8 +11,8 @@
 </head>
 <body>
   @include("parts.navbar")
-
-  <div class="bg-gray-100 w-full p-5 h-full space-y-5">
+  
+  <div class="bg-gray-100 w-full h-full p-5 mb-auto">
     @yield('content')
   </div>
 
